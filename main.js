@@ -196,7 +196,7 @@ let pickClassKnight = () => {
     document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
-    playerImage.innerHTML = '<img src="/images/player/knight.png" class="image">'; 
+    playerImage.innerHTML = '<img src="images/player/knight.png" class="image">'; 
     pickEnemyRat();
 };
 
@@ -221,7 +221,7 @@ let pickClassMonk = () => {
     document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
-    playerImage.innerHTML = '<img src="/images/player/monk.png" class="image">';
+    playerImage.innerHTML = '<img src="images/player/monk.png" class="image">';
     pickEnemyRat();
 };
 
@@ -246,7 +246,7 @@ let pickClassRogue = () => {
     document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
-    playerImage.innerHTML = '<img src="/images/player/rogue.png" class="image">';
+    playerImage.innerHTML = '<img src="images/player/rogue.png" class="image">';
     pickEnemyRat();
 };
 
@@ -271,7 +271,7 @@ let pickClassScrub = () => {
     document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
-    playerImage.innerHTML = '<img src="/images/player/scrub.png" class="image">';
+    playerImage.innerHTML = '<img src="images/player/scrub.png" class="image">';
     pickEnemyRat();   
 };
 
@@ -300,7 +300,7 @@ let pickEnemyRat = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/rat.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/rat.png" class="image">';
     battle();
 };
 
@@ -323,7 +323,7 @@ let pickEnemyZombie = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/zombie.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/zombie.png" class="image">';
 };
 
 let pickEnemyWolf = () => {
@@ -345,7 +345,7 @@ let pickEnemyWolf = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/wolf.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/wolf.png" class="image">';
 };
 
 let pickEnemyManAtArms = () => {
@@ -367,7 +367,7 @@ let pickEnemyManAtArms = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/man-at-arms.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/man-at-arms.png" class="image">';
 };
 
 let pickEnemyBear = () => {
@@ -389,7 +389,7 @@ let pickEnemyBear = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/bear.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/bear.png" class="image">';
 };
 
 let pickEnemyPriestess = () => {
@@ -411,7 +411,7 @@ let pickEnemyPriestess = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/priestess.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/priestess.png" class="image">';
 };
 
 let pickEnemySquire = () => {
@@ -433,7 +433,7 @@ let pickEnemySquire = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/squire.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/squire.png" class="image">';
 };
 
 let pickEnemyDarkKnight = () => {
@@ -455,7 +455,7 @@ let pickEnemyDarkKnight = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/dark-knight.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/dark-knight.png" class="image">';
 };
 
 let pickEnemyLion = () => {
@@ -477,7 +477,7 @@ let pickEnemyLion = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/lion.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/lion.png" class="image">';
 };
 
 let pickEnemyPaladin = () => {
@@ -499,7 +499,7 @@ let pickEnemyPaladin = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/paladin.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/paladin.png" class="image">';
 };
 
 let pickEnemyEmperor = () => {
@@ -521,7 +521,7 @@ let pickEnemyEmperor = () => {
     enemyAttackText.innerHTML = 'Attack:';
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/emperor.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/emperor.png" class="image">';
 };
 
 let pickEnemyPrincess = () => {
@@ -559,7 +559,7 @@ let pickEnemyPrincess = () => {
     document.getElementById('enemy-output3').style.fontWeight = "700";
     document.getElementById('enemy-output4').style.fontWeight = "700";
     let enemyImage = document.getElementById('enemy-image');
-    enemyImage.innerHTML = '<img src="/images/enemy/princess.png" class="image">';
+    enemyImage.innerHTML = '<img src="images/enemy/princess.png" class="image">';
 }
 
 // Next Battle Function //
