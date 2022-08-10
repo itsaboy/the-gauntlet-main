@@ -714,7 +714,7 @@ let concentrate = () => {
     let playerSpeedValue = document.getElementById('player-speed'); 
     playerAction.innerHTML = 'You concentrate for your next attack!';
     player.attack = player.attack * 2;
-    player.speed = player.speed + 50;
+    player.speed = player.speed + 25;
     playerAttackValue.innerHTML = 'Attack: ' + player.attack;
     playerSpeedValue.innerHTML = 'Speed: ' + player.speed;
     enemyTurn();
@@ -750,7 +750,7 @@ let enemyConcentrate = () => {
     let enemySpeedValue = document.getElementById('enemy-output4');
     enemyAction.innerHTML = enemy.name + ' concentrates for their next attack!';
     enemy.attack = enemy.attack * 2;
-    enemy.speed = enemy.speed + 50;
+    enemy.speed = enemy.speed + 25;
     enemyAttackValue.innerHTML = enemy.attack;
     enemySpeedValue.innerHTML = enemy.speed;
 };
