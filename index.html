@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="main.js" type="text/javascript"></script>
+    <title>The Gauntlet</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div id="grid">
+        <div id="block1">
+            <h1 class="enemy-block" id="enemy-text1"></h1>
+            <h1 class="enemy-block" id="enemy-output1"></h1>
+            <h1 class="enemy-block" id="enemy-text2"></h1>
+            <h1 class="enemy-block" id="enemy-output2"></h1>
+            <h1 class="enemy-block" id="enemy-text3"></h1>
+            <h1 class="enemy-block" id="enemy-output3"></h1>
+            <h1 class="enemy-block" id="enemy-text4"></h1>
+            <h1 class="enemy-block" id="enemy-output4"></h1>
+        </div>
+        <div id="block2">
+            <h1 id="enemy-image"></h1>
+        </div>
+        <div id="block3">
+            <h1 id="player-image"></h1>
+        </div>
+        <div id="block4">
+            <h1 id="player-text">Pick Your Class:</h1>
+            <button class="button" id="button1" onclick="pickClassKnight()">Knight</button>
+            <button class="button" id="button2" onclick="pickClassMonk()">Monk</button>
+            <button class="button" id="button3" onclick="pickClassRogue()">Rogue</button>
+            <button class="button" id="button4" onclick="pickClassScrub()">Scrub</button>
+            <h1 id="player-attack"></h1>
+            <h1 id="player-speed"></h1>
+        </div>
+        <div id="block5">
+            <h1 id="enemy-actions"></h1>
+            <h1 id="player-actions"></h1>
+        </div>
+    </div>
+</body>
+</html>

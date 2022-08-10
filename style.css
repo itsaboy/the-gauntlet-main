@@ -1,0 +1,224 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    background-color: #48494A;
+}
+
+* {
+    font: inherit;
+}
+
+/* Grid Setup */
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "block1 block1 block2"
+        "block3 block5 block2"
+        "block3 block4 block4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Grid Elements */
+
+
+/* Enemy Text */
+#block1 {
+    grid-area: block1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "enemy-text1 enemy-text2"
+        "enemy-output1 enemy-output2"
+        "enemy-text3 enemy-text4"
+        "enemy-output3 enemy-output4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1r 1fr 1fr 1fr;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: #E9EDF0;
+}
+
+#enemy-text1 {
+    grid-area: enemy-text1;
+    font-weight: 500; 
+}
+
+#enemy-text2 {
+    grid-area: enemy-text2;
+    font-weight: 500;
+    color: #288654;
+}
+
+#enemy-text3 {
+    grid-area: enemy-text3;
+    font-weight: 500;
+    color: #C70000;
+}
+
+#enemy-text4 {
+    grid-area: enemy-text4;
+    font-weight: 500;
+    color: #2A5DDE;
+}
+
+#enemy-output1 {
+    grid-area: enemy-output1;
+}
+
+#enemy-output2 {
+    grid-area: enemy-output2;
+}
+
+#enemy-output3 {
+    grid-area: enemy-output3;
+}
+
+
+#enemy-output4 {
+    grid-area: enemy-output4;
+}
+
+
+/* Enemy Graphic */
+#block2 {
+    grid-area: block2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Player Graphic */
+#block3 {
+    grid-area: block3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    max-width: 405px;
+    max-height: 720px;
+}
+
+/* Player Text */
+#block4 {
+    grid-area: block4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "player-text player-text"
+        "button1 button2"
+        "button3 button4"
+        "player-attack player-speed";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #E9EDF0;
+}
+
+#player-text {
+    grid-area: player-text;
+    font-weight: 500;
+}
+
+.button {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #ABAEB0;
+    border: black solid 0.25rem;
+}
+
+#button1 {
+    grid-area: button1;
+    margin-left: 1rem;
+    padding: 1rem; 
+    color: #C70000;
+    font-weight: 500; 
+}
+
+#button2 {
+    grid-area: button2;
+    margin-right: 1rem;
+    padding: 1rem;
+    color: #288654;
+    font-weight: 500;
+}
+
+#button3 {
+    grid-area: button3;
+    margin-left: 1rem;
+    padding: 1rem;
+    color: #2A5DDE;
+    font-weight: 500;
+}
+#button4 {
+    grid-area: button4;
+    margin-right: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+#player-attack {
+    grid-area: player-attack;
+}
+
+#player-speed {
+    grid-area: player-speed;
+}
+
+/* Center of Screen */
+#block5 {
+    grid-area: block5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "enemy-actions"
+        "player-actions";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+#block5 h1 {
+    color: #E9EDF0;
+}
+
+#enemy-actions {
+    grid-area: enemy-actions;
+}
+
+#player-actions {
+    grid-area: player-actions;
+}
+
+#continue-button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#pre-fight-button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
