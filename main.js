@@ -196,7 +196,8 @@ let pickClassKnight = () => {
     document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
-    playerImage.innerHTML = '<img src="images/player/knight.png" class="player-image">'; 
+    playerImage.innerHTML = '<img src="images/player/knight.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: player-image-load 750ms");
     pickEnemyRat();
 };
 
@@ -222,6 +223,7 @@ let pickClassMonk = () => {
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/monk.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: player-image-load 750ms");
     pickEnemyRat();
 };
 
@@ -247,6 +249,7 @@ let pickClassRogue = () => {
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/rogue.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: player-image-load 750ms");
     pickEnemyRat();
 };
 
@@ -272,6 +275,7 @@ let pickClassScrub = () => {
     document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/scrub.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: player-image-load 750ms");
     pickEnemyRat();   
 };
 
@@ -281,8 +285,6 @@ let pickEnemyRat = () => {
     enemy = rat;
     let enemyAction = document.getElementById('enemy-actions');
     enemyAction.innerHTML = enemy.name + ' approaches!';
-    let playerAction = document.getElementById('player-actions');
-    playerAction.innerHTML = enemy.name + ' approaches!';
     let enemyNameText = document.getElementById('enemy-text1');
     let enemyHealthText = document.getElementById('enemy-text2');
     let enemyAttackText = document.getElementById('enemy-text3');
@@ -301,11 +303,12 @@ let pickEnemyRat = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/rat.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
     battle();
 };
 
 let pickEnemyZombie = () => {
-    enemy = zombie;
+    enemy = zombie;    
     let enemyNameText = document.getElementById('enemy-text1');
     let enemyHealthText = document.getElementById('enemy-text2');
     let enemyAttackText = document.getElementById('enemy-text3');
@@ -324,6 +327,7 @@ let pickEnemyZombie = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/zombie.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyWolf = () => {
@@ -346,6 +350,7 @@ let pickEnemyWolf = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/wolf.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyManAtArms = () => {
@@ -368,6 +373,7 @@ let pickEnemyManAtArms = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/man-at-arms.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyBear = () => {
@@ -390,6 +396,7 @@ let pickEnemyBear = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/bear.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyPriestess = () => {
@@ -412,6 +419,7 @@ let pickEnemyPriestess = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/priestess.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemySquire = () => {
@@ -434,6 +442,7 @@ let pickEnemySquire = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/squire.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyDarkKnight = () => {
@@ -456,6 +465,7 @@ let pickEnemyDarkKnight = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/dark-knight.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyLion = () => {
@@ -478,6 +488,7 @@ let pickEnemyLion = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/lion.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyPaladin = () => {
@@ -500,6 +511,7 @@ let pickEnemyPaladin = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/paladin.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyEmperor = () => {
@@ -522,6 +534,7 @@ let pickEnemyEmperor = () => {
     enemySpeedText.innerHTML = 'Speed:';
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/emperor.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 };
 
 let pickEnemyPrincess = () => {
@@ -560,6 +573,7 @@ let pickEnemyPrincess = () => {
     document.getElementById('enemy-output4').style.fontWeight = "700";
     let enemyImage = document.getElementById('enemy-image');
     enemyImage.innerHTML = '<img src="images/enemy/princess.png" class="enemy-image">';
+    enemyImage.setAttribute("style", "animation: enemy-image-load 750ms");
 }
 
 // Next Battle Function //
@@ -679,6 +693,8 @@ let enemyTurn = () => {
         continueBattle();
         let enemyAction = document.getElementById('enemy-actions');
         enemyAction.innerHTML = enemy.name + ' has Died!';
+        let enemyImage = document.getElementById('enemy-image');
+        enemyImage.setAttribute("style", "animation: enemy-image-fade 750ms");
     };
     if (player.health <= 0 ) {
         endBattle();

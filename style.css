@@ -48,7 +48,7 @@ body {
     margin-left: 1rem;
     margin-top: 1rem;
     background-color: #E9EDF0;
-    animation: block1-load 300ms;
+    animation: block1-load 500ms;
 }
 
 @keyframes block1-load {
@@ -109,6 +109,26 @@ body {
     justify-content: center;
 }
 
+@keyframes enemy-image-load {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes enemy-image-fade {
+    0% {
+        transform: translateZ(-100%);
+    }
+
+    100% {
+        transform: translateZ(0);
+    }
+}
+
 .enemy-image {
     max-width: 405px;
     max-height: 720px;
@@ -125,6 +145,16 @@ body {
 .player-image {
     max-width: 405px;
     max-height: 720px;
+}
+
+@keyframes player-image-load {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Player Text */
@@ -146,7 +176,7 @@ body {
     margin-right: 1rem;
     margin-bottom: 1rem;
     background-color: #E9EDF0;
-    animation: block4-load 300ms;
+    animation: block4-load 500ms;
 }
 
 @keyframes block4-load {
