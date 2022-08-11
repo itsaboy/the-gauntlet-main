@@ -16,8 +16,8 @@ class Player {
 let knight = new Player(
     'Knight',
     1750,
-    2000,
-    1500
+    200,
+    150
 );
 
 let monk = new Player(
