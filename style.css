@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     background-color: #48494A;
+    overflow: hidden;
 }
 
 * {
@@ -47,6 +48,17 @@ body {
     margin-left: 1rem;
     margin-top: 1rem;
     background-color: #E9EDF0;
+    animation: block1-load 300ms;
+}
+
+@keyframes block1-load {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #enemy-text1 {
@@ -89,7 +101,6 @@ body {
     grid-area: enemy-output4;
 }
 
-
 /* Enemy Graphic */
 #block2 {
     grid-area: block2;
@@ -98,15 +109,20 @@ body {
     justify-content: center;
 }
 
+.enemy-image {
+    max-width: 405px;
+    max-height: 720px;
+}
+
 /* Player Graphic */
 #block3 {
     grid-area: block3;
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
 
-.image {
+.player-image {
     max-width: 405px;
     max-height: 720px;
 }
@@ -130,6 +146,17 @@ body {
     margin-right: 1rem;
     margin-bottom: 1rem;
     background-color: #E9EDF0;
+    animation: block4-load 300ms;
+}
+
+@keyframes block4-load {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #player-text {
