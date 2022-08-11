@@ -80,10 +80,10 @@ let wolf = new Enemy(
 );
 
 let manAtArms = new Enemy(
-    'Man at Arms', 
+    'Berserker', 
     500, 
     250, 
-    200,
+    250,
     "'You made it this far... but this is the end of the line!'"
 );
 
@@ -91,7 +91,7 @@ let bear = new Enemy(
     'Bear', 
     750, 
     500, 
-    250,
+    300,
     "'GRRRRRRRR!!!'"
 );
 
@@ -115,7 +115,7 @@ let darkKnight = new Enemy(
     'Dark Knight', 
     1000, 
     500, 
-    200,
+    400,
     "'Step into the darkness...'"
 );
 
@@ -131,7 +131,7 @@ let paladin = new Enemy(
     'Paladin', 
     1500, 
     750, 
-    300,
+    400,
     "'Step into the light!'"
 );
 
@@ -139,7 +139,7 @@ let emperor = new Enemy(
     'The Emperor', 
     2000, 
     1000, 
-    500,
+    600,
     "'I command thee kneel!'"
 );
 
