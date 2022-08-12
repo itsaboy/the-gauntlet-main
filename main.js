@@ -156,6 +156,7 @@ let randomNumber = Math.floor(Math.random() * 11);
 
 // HTML Elements //
 
+let enemyImage = document.getElementById('enemy-image');
 let enemyNameText = document.getElementById('enemy-text1');
 let enemyNameValue = document.getElementById('enemy-output1');
 let enemyHealthText = document.getElementById('enemy-text2');
@@ -171,7 +172,55 @@ let buttonOne = document.getElementById('button1');
 let buttonTwo = document.getElementById('button2');
 let buttonThree = document.getElementById('button3');
 let buttonFour = document.getElementById('button4');
-let playerFooter = document.getElementById('player-footer');
+let playerImage = document.getElementById('player-image');
+
+let showKnight = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.innerHTML = '<img src="images/player/knight.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: fadeIn ease 150ms");
+};
+
+let hideKnight = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.setAttribute("style", "animation: fadeOut ease 100ms;");
+    playerImage.innerHTML = '';
+};
+
+let showMonk = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.innerHTML = '<img src="images/player/monk.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: fadeIn ease 150ms");
+};
+
+let hideMonk = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.setAttribute("style", "animation: fadeOut ease 100ms;");
+    playerImage.innerHTML = '';
+};
+
+let showRogue = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.innerHTML = '<img src="images/player/rogue.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: fadeIn ease 150ms");
+};
+
+let hideRogue = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.setAttribute("style", "animation: fadeOut ease 100ms;");
+    playerImage.innerHTML = '';   
+};
+
+let showScrub = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.innerHTML = '<img src="images/player/scrub.png" class="player-image">';
+    playerImage.setAttribute("style", "animation: fadeIn ease 150ms");
+};
+
+let hideScrub = () => {
+    let playerImage = document.getElementById('player-image');
+    playerImage.setAttribute("style", "animation: fadeOut ease 100ms;");
+    playerImage.innerHTML = ''; 
+};
 
 // Player Class Select //
 
@@ -191,13 +240,21 @@ let pickClassKnight = () => {
     let playerSpeedValue = document.getElementById('player-speed');
     playerAttackValue.innerHTML = 'Attack: ' + player.attack;
     playerSpeedValue.innerHTML = 'Speed: ' + player.speed;
-    document.getElementById('button1').setAttribute( "onClick", "attack();" );
-    document.getElementById('button2').setAttribute( "onClick", "defend();" );
-    document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
-    document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
+    document.getElementById('button1').setAttribute( "onClick", "attack();");
+    document.getElementById('button1').setAttribute( "onmouseover", "");
+    document.getElementById('button1').setAttribute( "onmouseout", "");
+    document.getElementById('button2').setAttribute( "onClick", "defend();");
+    document.getElementById('button2').setAttribute( "onmouseover", "");
+    document.getElementById('button2').setAttribute( "onmouseout", "");
+    document.getElementById('button3').setAttribute( "onClick", "concentrate();");
+    document.getElementById('button3').setAttribute( "onmouseover", "");
+    document.getElementById('button3').setAttribute( "onmouseout", "");
+    document.getElementById('button4').setAttribute( "onClick", "doNothing();");
+    document.getElementById('button4').setAttribute( "onmouseover", "");
+    document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/knight.png" class="player-image">';
-    playerImage.setAttribute("style", "animation: player-image-load 750ms");
+    
     pickEnemyRat();
 };
 
@@ -217,13 +274,21 @@ let pickClassMonk = () => {
     let playerSpeedValue = document.getElementById('player-speed');
     playerAttackValue.innerHTML = 'Attack: ' + player.attack;
     playerSpeedValue.innerHTML = 'Speed: ' + player.speed;
-    document.getElementById('button1').setAttribute( "onClick", "attack();" );
-    document.getElementById('button2').setAttribute( "onClick", "defend();" );
-    document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
-    document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
+    document.getElementById('button1').setAttribute( "onClick", "attack();");
+    document.getElementById('button1').setAttribute( "onmouseover", "");
+    document.getElementById('button1').setAttribute( "onmouseout", "");
+    document.getElementById('button2').setAttribute( "onClick", "defend();");
+    document.getElementById('button2').setAttribute( "onmouseover", "");
+    document.getElementById('button2').setAttribute( "onmouseout", "");
+    document.getElementById('button3').setAttribute( "onClick", "concentrate();");
+    document.getElementById('button3').setAttribute( "onmouseover", "");
+    document.getElementById('button3').setAttribute( "onmouseout", "");
+    document.getElementById('button4').setAttribute( "onClick", "doNothing();");
+    document.getElementById('button4').setAttribute( "onmouseover", "");
+    document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/monk.png" class="player-image">';
-    playerImage.setAttribute("style", "animation: player-image-load 750ms");
+    
     pickEnemyRat();
 };
 
@@ -243,13 +308,21 @@ let pickClassRogue = () => {
     let playerSpeedValue = document.getElementById('player-speed');
     playerAttackValue.innerHTML = 'Attack: ' + player.attack;
     playerSpeedValue.innerHTML = 'Speed: ' + player.speed;
-    document.getElementById('button1').setAttribute( "onClick", "attack();" );
-    document.getElementById('button2').setAttribute( "onClick", "defend();" );
-    document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
-    document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
+    document.getElementById('button1').setAttribute( "onClick", "attack();");
+    document.getElementById('button1').setAttribute( "onmouseover", "");
+    document.getElementById('button1').setAttribute( "onmouseout", "");
+    document.getElementById('button2').setAttribute( "onClick", "defend();");
+    document.getElementById('button2').setAttribute( "onmouseover", "");
+    document.getElementById('button2').setAttribute( "onmouseout", "");
+    document.getElementById('button3').setAttribute( "onClick", "concentrate();");
+    document.getElementById('button3').setAttribute( "onmouseover", "");
+    document.getElementById('button3').setAttribute( "onmouseout", "");
+    document.getElementById('button4').setAttribute( "onClick", "doNothing();");
+    document.getElementById('button4').setAttribute( "onmouseover", "");
+    document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/rogue.png" class="player-image">';
-    playerImage.setAttribute("style", "animation: player-image-load 750ms");
+    
     pickEnemyRat();
 };
 
@@ -269,13 +342,21 @@ let pickClassScrub = () => {
     let playerSpeedValue = document.getElementById('player-speed');
     playerAttackValue.innerHTML = 'Attack: ' + player.attack;
     playerSpeedValue.innerHTML = 'Speed: ' + player.speed;
-    document.getElementById('button1').setAttribute( "onClick", "attack();" );
-    document.getElementById('button2').setAttribute( "onClick", "defend();" );
-    document.getElementById('button3').setAttribute( "onClick", "concentrate();" );
-    document.getElementById('button4').setAttribute( "onClick", "doNothing();" );
+    document.getElementById('button1').setAttribute( "onClick", "attack();");
+    document.getElementById('button1').setAttribute( "onmouseover", "");
+    document.getElementById('button1').setAttribute( "onmouseout", "");
+    document.getElementById('button2').setAttribute( "onClick", "defend();");
+    document.getElementById('button2').setAttribute( "onmouseover", "");
+    document.getElementById('button2').setAttribute( "onmouseout", "");
+    document.getElementById('button3').setAttribute( "onClick", "concentrate();");
+    document.getElementById('button3').setAttribute( "onmouseover", "");
+    document.getElementById('button3').setAttribute( "onmouseout", "");
+    document.getElementById('button4').setAttribute( "onClick", "doNothing();");
+    document.getElementById('button4').setAttribute( "onmouseover", "");
+    document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/scrub.png" class="player-image">';
-    playerImage.setAttribute("style", "animation: player-image-load 750ms");
+    
     pickEnemyRat();   
 };
 
@@ -585,6 +666,8 @@ let continueBattle = () => {
     document.getElementById("button2").disabled = true;
     document.getElementById("button3").disabled = true;
     document.getElementById("button4").disabled = true;
+    let enemyImage = document.getElementById('enemy-image');
+    setTimeout(() => {enemyImage.innerHTML = '';}, 100);
 };
 
 let preBattle = () => {
@@ -647,10 +730,11 @@ let endBattle = () => {
     document.getElementById("button2").disabled = true;
     document.getElementById("button3").disabled = true;
     document.getElementById("button4").disabled = true;
-    let enemyAction = document.getElementById('enemy-actions');
-    enemyAction.innerHTML = 'YOU DIED!';
     let playerAction = document.getElementById('player-actions');
-    playerAction.innerHTML = 'Refresh to play again!';
+    playerAction.innerHTML = 'YOU DIED! Refresh to play again!';
+    let playerImage = document.getElementById('player-image');
+    playerImage.setAttribute("style", "animation: fadeOut ease 1000ms;");
+    setTimeout(() => {playerImage.innerHTML = '';}, 900);
 }
 
 // Battles //
@@ -709,6 +793,8 @@ let attack = () => {
     playerAction.innerHTML = 'You attack for ' + player.attack + ' damage!';
     enemy.health = enemy.health - player.attack;
     enemyHealthValue.innerHTML = enemy.health;
+    let enemyImage = document.getElementById('enemy-image');
+    enemyImage.setAttribute("style", "animation: fadeOut ease 150ms;")
     if (enemy.health <= 0 ) {
         continueBattle();
     };
