@@ -660,19 +660,21 @@ let pickEnemyPrincess = () => {
 // Next Battle Function //
 
 let continueBattle = () => {
-    let playerAction = document.getElementById('player-actions');
-    playerAction.innerHTML = '<button id="continue-button" class="button" onclick="nextBattle()">Continue?</button>';
+    let middleAction = document.getElementById('middle-actions');
+    middleAction.innerHTML = '<button id="continue-button" class="mid-button" onclick="nextBattle()">Continue?</button>';
     document.getElementById("button1").disabled = true;
     document.getElementById("button2").disabled = true;
     document.getElementById("button3").disabled = true;
     document.getElementById("button4").disabled = true;
     let enemyImage = document.getElementById('enemy-image');
-    setTimeout(() => {enemyImage.innerHTML = '';}, 100);
+    setTimeout(() => {enemyImage.innerHTML = ' ';}, 100);
 };
 
 let preBattle = () => {
     let playerAction = document.getElementById('player-actions');
-    playerAction.innerHTML = '<button id="pre-fight-button" class="button" onclick="battle()">Fight!</button>';
+    let middleAction = document.getElementById('middle-actions');
+    middleAction.innerHTML = '<button id="pre-fight-button" class="mid-button" onclick="battle()">Fight!</button>';
+    playerAction.innerHTML = 'What will you do?';
 };
 
 let nextBattle = () => {
@@ -740,6 +742,8 @@ let endBattle = () => {
 // Battles //
 
 let battle = () => {
+    let middleAction = document.getElementById('middle-actions');
+    middleAction.innerHTML = '';
     document.getElementById("button1").disabled = false;
     document.getElementById("button2").disabled = false;
     document.getElementById("button3").disabled = false;
@@ -766,7 +770,7 @@ let enemyTurn = () => {
     let enemyMove = randomNumber;
     if (enemyMove <= 5 && enemy.health > 0 ) {
         enemyAttack();
-    } else if (enemyMove >= 6 && enemyMove <= 7 && enemy.health > 0 ) {
+    } else if ((enemyMove >= 6 && enemyMove <= 7 && enemy.health > 0) || player.attack >= 1500) {
         enemyDefend();
     } else if (enemyMove >= 8 && enemyMove <= 9 && enemy.health > 0 ) {
         enemyConcentrate();

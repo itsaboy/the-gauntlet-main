@@ -227,7 +227,7 @@ body {
 
 .button:hover {
     background-color: #ABAEB0;
-    border: black solid 0.25rem;
+    border: black solid 0.2rem;
 }
 
 #button1 {
@@ -276,9 +276,10 @@ body {
     justify-content: center;
     grid-template-areas:
         "enemy-actions"
+        "middle-actions"
         "player-actions";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.25fr 1fr;
     gap: 1rem;
 }
 
@@ -294,12 +295,22 @@ body {
     grid-area: player-actions;
 }
 
-#continue-button {
-    padding-left: 3rem;
-    padding-right: 3rem;
+#middle-actions {
+    grid-area: middle-actions;
 }
 
-#pre-fight-button {
-    padding-left: 3rem;
-    padding-right: 3rem;
+.mid-button {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    background-image: radial-gradient(circle, #E9EDF0, #48494A);
+}
+
+.mid-button:hover {
+    background-image: radial-gradient(circle, #E9EDF0, #E9EDF0) ;
+    border: solid 0.2rem black;
 }
