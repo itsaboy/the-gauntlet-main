@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     background-image: url("images/background/wall.jpg");
-    background-color: #48494A;
+    background-color: #6D6F70;
     background-blend-mode: multiply;
     overflow: hidden;
 }
