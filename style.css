@@ -4,13 +4,27 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    background-image: linear-gradient(45deg, #48494A, #060606);
+    background-image: url("images/background/wall.jpg");
     background-color: #48494A;
+    background-blend-mode: multiply;
     overflow: hidden;
 }
 
 * {
     font: inherit;
+}
+
+/* Background */
+
+#background {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/background/floor.jpg");
+    background-color: #E9EDF0;
+    background-blend-mode: multiply;
+    clip-path: polygon(100% 56%, 100% 100%, 0 100%, 0 72%, 100% 14%);
+    position: absolute;
+    z-index: -1;
 }
 
 /* Grid Setup */
@@ -34,7 +48,7 @@ body {
 /* Enemy Text */
 #block1 {
     grid-area: block1;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border: solid 0.2rem #E9EDF0;
     border-radius: 2rem;
     display: grid;
@@ -181,7 +195,7 @@ body {
 /* Player Text */
 #block4 {
     grid-area: block4;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border: solid 0.2rem #E9EDF0;
     border-radius: 2rem;
     display: grid;
@@ -218,7 +232,7 @@ body {
 }
 
 .button {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 1rem;
     padding: 1rem;
     font-weight: 500;
@@ -228,6 +242,7 @@ body {
 .button:hover {
     background-color: #ABAEB0;
     border: black solid 0.2rem;
+    cursor: pointer;
 }
 
 #button1 {
@@ -284,15 +299,28 @@ body {
 }
 
 #block5 h1 {
-    color: #E9EDF0;
+    color: black;
+    font-weight: 500;
 }
 
 #enemy-actions {
     grid-area: enemy-actions;
+    border: solid .1rem black;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background-image: linear-gradient(180deg,  #E9EDF0, #48494A);
+    visibility: hidden;
+    opacity: 0.75;
 }
 
 #player-actions {
     grid-area: player-actions;
+    border: solid .1rem black;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    background-image: linear-gradient(180deg, #48494A, #E9EDF0);
+    visibility: hidden;
+    opacity: 0.75;
 }
 
 #middle-actions {
@@ -300,7 +328,7 @@ body {
 }
 
 .mid-button {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -308,9 +336,12 @@ body {
     padding-right: 1rem;
     font-weight: 500;
     background-image: radial-gradient(circle, #E9EDF0, #48494A);
+    border: solid 0.2rem #E9EDF0;
 }
 
 .mid-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-image: radial-gradient(circle, #E9EDF0, #E9EDF0) ;
     border: solid 0.2rem black;
+    cursor: pointer;
 }

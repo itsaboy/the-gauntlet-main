@@ -254,7 +254,10 @@ let pickClassKnight = () => {
     document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/knight.png" class="player-image">';
-    
+    let playerActions = document.getElementById('player-actions');
+    let enemyActions = document.getElementById('enemy-actions');
+    playerActions.setAttribute("style", "visibility: visible");
+    enemyActions.setAttribute("style", "visibility: visible");
     pickEnemyRat();
 };
 
@@ -288,7 +291,10 @@ let pickClassMonk = () => {
     document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/monk.png" class="player-image">';
-    
+    let playerActions = document.getElementById('player-actions');
+    let enemyActions = document.getElementById('enemy-actions');
+    playerActions.setAttribute("style", "visibility: visible");
+    enemyActions.setAttribute("style", "visibility: visible");
     pickEnemyRat();
 };
 
@@ -322,7 +328,10 @@ let pickClassRogue = () => {
     document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/rogue.png" class="player-image">';
-    
+    let playerActions = document.getElementById('player-actions');
+    let enemyActions = document.getElementById('enemy-actions');
+    playerActions.setAttribute("style", "visibility: visible");
+    enemyActions.setAttribute("style", "visibility: visible");
     pickEnemyRat();
 };
 
@@ -356,7 +365,10 @@ let pickClassScrub = () => {
     document.getElementById('button4').setAttribute( "onmouseout", "");
     let playerImage = document.getElementById('player-image');
     playerImage.innerHTML = '<img src="images/player/scrub.png" class="player-image">';
-    
+    let playerActions = document.getElementById('player-actions');
+    let enemyActions = document.getElementById('enemy-actions');
+    playerActions.setAttribute("style", "visibility: visible");
+    enemyActions.setAttribute("style", "visibility: visible");
     pickEnemyRat();   
 };
 
@@ -768,9 +780,9 @@ let playerTurn = () => {
 let enemyTurn = () => {
     let randomNumber = Math.floor(Math.random() * 11);
     let enemyMove = randomNumber;
-    if (enemyMove <= 5 && enemy.health > 0 ) {
+    if (enemyMove <= 4 && enemy.health > 0 ) {
         enemyAttack();
-    } else if ((enemyMove >= 6 && enemyMove <= 7 && enemy.health > 0) || player.attack >= 1500) {
+    } else if (enemyMove >= 5 && enemyMove <= 7 && enemy.health > 0 ) {
         enemyDefend();
     } else if (enemyMove >= 8 && enemyMove <= 9 && enemy.health > 0 ) {
         enemyConcentrate();
