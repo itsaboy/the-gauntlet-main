@@ -747,7 +747,7 @@ let endBattle = () => {
     let playerAction = document.getElementById('player-actions');
     playerAction.innerHTML = 'YOU DIED! Refresh to play again!';
     let playerImage = document.getElementById('player-image');
-    playerImage.setAttribute("style", "animation: fadeOut ease 1000ms;");
+    playerImage.setAttribute("style", "animation: fadeOut ease 1500ms;");
     setTimeout(() => {playerImage.innerHTML = '';}, 900);
 }
 
