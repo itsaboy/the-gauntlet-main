@@ -16,8 +16,8 @@ class Player {
 let knight = new Player(
     'Knight',
     1750,
-    2000,
-    1500
+    200,
+    150
 );
 
 let monk = new Player(
@@ -107,7 +107,7 @@ let squire = new Enemy(
     'Squire', 
     850, 
     400, 
-    300,
+    350,
     "'I have trained my entire life for this!'"
 );
 
@@ -115,7 +115,7 @@ let darkKnight = new Enemy(
     'Dark Knight', 
     1000, 
     500, 
-    400,
+    500,
     "'Step into the darkness...'"
 );
 
@@ -131,7 +131,7 @@ let paladin = new Enemy(
     'Paladin', 
     1500, 
     750, 
-    400,
+    750,
     "'Step into the light!'"
 );
 
@@ -139,7 +139,7 @@ let emperor = new Enemy(
     'The Emperor', 
     2000, 
     1000, 
-    600,
+    750,
     "'I command thee kneel!'"
 );
 
