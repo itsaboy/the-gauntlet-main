@@ -105,7 +105,7 @@ let priestess = new Enemy(
 
 let squire = new Enemy(
     'Squire', 
-    750, 
+    850, 
     400, 
     300,
     "'I have trained my entire life for this!'"
@@ -121,7 +121,7 @@ let darkKnight = new Enemy(
 
 let lion = new Enemy(
     'Lion', 
-    1000, 
+    1200, 
     750, 
     500,
     "'*snarls*'"
