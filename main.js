@@ -16,15 +16,15 @@ class Player {
 let knight = new Player(
     'Knight',
     1750,
-    200,
+    250,
     150
 );
 
 let monk = new Player(
     'Monk',
     1300,
-    250,
-    200
+    300,
+    250
 );
 
 let rogue = new Player(
